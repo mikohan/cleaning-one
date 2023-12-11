@@ -1,6 +1,5 @@
 import React from 'react';
-import vidBg from '../assets/bmw_v3.mp4';
-import vidBg1 from '../assets/cleaning_creative_002_15_sec.mp4';
+import vidBg1 from '../assets/creo_no_sound.mp4';
 import Modal from 'react-bootstrap/Modal';
 import { Button } from 'react-bootstrap';
 import CallToActionForm from './CallToActionForm';
