@@ -39,7 +39,12 @@ const Main = () => {
         </div>
         {/* // Bottom button */}
         <div className='button-block'>
-          <Button variant='success' size='lg' className='button-bottom'>
+          <Button
+            variant='success'
+            size='lg'
+            className='button-bottom'
+            onClick={() => setShow(true)}
+          >
             Order Cleaning Now!
           </Button>
         </div>

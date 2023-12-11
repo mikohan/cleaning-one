@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { PhoneField } from './PhoneField';
 
 interface IProps {
   onSubmit: () => void;
@@ -14,7 +15,7 @@ function BasicExample({ onSubmit }: IProps) {
     <Form onSubmit={(event) => onSubmitForm(event)}>
       <Form.Group className='mb-3' controlId='formBasicPassword'>
         <Form.Label>Phone</Form.Label>
-        <Form.Control type='phone' placeholder='Phone' />
+        <PhoneField />
       </Form.Group>
 
       <Form.Group className='mb-3' controlId='formBasicEmail'>
