@@ -19,7 +19,14 @@ const Main = () => {
       <CallToActionToast show={toastShow} setShow={setToastShow} />
       <div className='main'>
         <div className='overlay'></div>
-        <video src={vidBg1} autoPlay loop muted playsInline />
+        <video
+          src={vidBg1}
+          autoPlay
+          loop
+          muted
+          playsInline
+          disablePictureInPicture
+        />
         <div className='logo-wrapper'>
           <div className='phone'>
             <img src={logo} />
