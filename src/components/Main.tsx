@@ -5,6 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import { Button } from 'react-bootstrap';
 import CallToActionForm from './CallToActionForm';
 import CallToActionToast from './CallToActionToast';
+import logo from '../assets/cleaning_logo_white2.png';
 
 const Main = () => {
   const [show, setShow] = React.useState<boolean>(false);
@@ -21,12 +22,18 @@ const Main = () => {
         <div className='overlay'></div>
         <video src={vidBg1} autoPlay loop muted />
         <div className='logo-wrapper'>
-          <div className='phone'>Logo here</div>
-          <div className='phone'>(951) 224 41 09</div>
+          <div className='phone'>
+            <img src={logo} />
+          </div>
+          <div className='phone'>
+            <p>Mae Deep Cleaning</p>
+            <p>(951) 224 41 09</p>
+          </div>
         </div>
         <div className='content'>
           <h1>Deep Cleaning Services</h1>
           <p>For only $39/hr</p>
+          <p className='only'>$70/hr</p>
           <Button
             variant='outline-light'
             size='lg'

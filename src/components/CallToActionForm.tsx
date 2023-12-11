@@ -2,7 +2,6 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { PhoneField } from './PhoneField';
-import { isValidPhoneNumber } from 'react-phone-number-input';
 
 interface IProps {
   onSubmit: () => void;
@@ -11,7 +10,6 @@ interface IProps {
 function BasicExample({ onSubmit }: IProps) {
   const [phoneValue, setPhoneValue] = React.useState<string>();
 
-  console.log(phoneValue);
   const onSubmitForm = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (phoneValue) {
