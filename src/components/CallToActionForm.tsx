@@ -11,7 +11,6 @@ interface IProps {
 function BasicExample({ onSubmit }: IProps) {
   const [phoneValue, setPhoneValue] = React.useState<string>('');
   const [clientName, setClientName] = React.useState<string>('');
-  console.log(phoneValue, clientName);
 
   const onSubmitForm = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
