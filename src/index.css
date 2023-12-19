@@ -80,3 +80,9 @@ video {
   position: fixed;
   z-index: 1005;
 }
+.price {
+  font-weight: bold;
+  font-size: 5rem;
+  color: aliceblue;
+  -webkit-text-stroke: 3px #5cb85c;
+}

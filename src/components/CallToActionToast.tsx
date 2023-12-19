@@ -24,7 +24,7 @@ function CallToActionToast({ show, setShow }: IProps) {
         <strong className='me-auto'>Order Sent!</strong>
         <small>Success!</small>
       </Toast.Header>
-      <Toast.Body>We'll contact you ASAP!</Toast.Body>
+      <Toast.Body>We'll text you ASAP!</Toast.Body>
     </Toast>
   );
 }

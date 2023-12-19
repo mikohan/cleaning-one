@@ -38,14 +38,17 @@ const Main = () => {
         </div>
         <div className='content'>
           <h1>Deep Cleaning Services</h1>
-          <p>For only $39/hr</p>
+          <p>For only</p>
+          <p className='price-background'>
+            <span className='price'>$40/hr</span>
+          </p>
           <p className='only'>$70/hr</p>
           <Button
             variant='outline-light'
             size='lg'
             onClick={() => setShow(true)}
           >
-            Contact us now!
+            Send Me Quote!
           </Button>
 
           <h2 className='happy-customers'>More than 500 happy clients!</h2>
@@ -91,7 +94,7 @@ function MyVerticallyCenteredModal({ onSubmit, setShow, show }: IProps) {
     >
       <Modal.Header closeButton>
         <Modal.Title id='contained-modal-title-vcenter'>
-          We'll reach out you ASAP!
+          We'll text out you ASAP!
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
